@@ -25,7 +25,7 @@
             <div class="text-6xl font-bold text-white  ">End-to-End Travel with</div>
             <div class="text-6xl font-bold text-[#1DD100]">P Paribahan</div>
             <div class="text-white text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</div>
-            <button class="text-black font-bold bg-[#1DD100] rounded-md px-5 py-3" ><a href="#info-section">Buy Tickets</a> </button>
+            <a href="#info-section">  <button class="text-black font-bold bg-[#1DD100] rounded-md px-5 py-3" >Buy Tickets</button></a> 
            </div>
         </main>
    </header>
@@ -160,10 +160,10 @@
                 
                 <div class="flex justify-between">
                     <div class="flex flex-col space-y-4" > <!--Left site seat-->
-                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>A</p><button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >A1</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >A2</button></div>
-                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>B</p><button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B1</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B2</button></div>
-                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>C</p><button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C1</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C2</button></div>
-                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>D</p><button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D1</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D2</button></div>
+                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>A</p><button onclick =a1() id="a1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >A1</button><button onclick =a2() id="a2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >A2</button></div>
+                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>B</p><button onclick =b1() id="b1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B1</button><button onclick =b2() id="b2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B2</button></div>
+                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>C</p><button onclick =c1() id="c1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C1</button><button onclick =c2() id="c2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C2</button></div>
+                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>D</p><button onclick =d1() id="d1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D1</button><button onclick =d2() id="d2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D2</button></div>
                         <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>E</p><button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E1</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E2</button></div>
                     </div>
                     <div class="flex flex-col space-y-4"><!--Right site seat-->
@@ -181,7 +181,7 @@
                 <div class="ml-6  text-2xl font-semibold h-[50px] border-b-2 mt-7"> Select Your Seat</div>
                 <div class="h-[837px] w-[433px] mx-auto mt-5 bg-[#F7F8F5] ">
                     <div class="w-full h-[335px]  space-y-1">
-                         <div class="w-full h-16 mx-3  flex justify-around text-xl font-bold text-black items-center border-b-2 "><div class="flex space-x-2"><p>Seat</p><span>0</span></div><p>Class</p><p>Price</p> </div>
+                         <div class="w-full h-16 mx-3  flex justify-around text-xl font-bold text-black items-center border-b-2 "><div class="flex space-x-2"><p>Seat</p><span id="totalSeat">0</span></div><p>Class</p><p>Price</p> </div>
                          <div class="w-full h-[86px] mx-3 flex flex-col border-b-4 border-black "> 
                             <div class="w-full h-1/2 flex justify-around text-xl text-black items-center ">
                                <p>C2 </p> <p> Economoy </p><p>550</p>
@@ -191,7 +191,7 @@
                             </div>
                          </div>
                          <div class="w-full h-12 mx-3 flex justify-around text-xl font-bold text-black items-center ">
-                            <p>Total Price </p> <p> </p><div class="flex space-x-5 mr-4" ><p>BDT</p><span>0</span></div>
+                            <p>Total Price </p> <p> </p><div class="flex space-x-5 mr-4" ><p>BDT</p><span id="totalPrice">0</span></div>
                          </div>
                          <div class="w-full h-16 mx-3 flex items-center rounded-l-[20px] bg-white ">
                             <input class="w-2/3 h-full rounded-l-[20px] " placeholder="Have any copupon?">
@@ -204,15 +204,15 @@
                     <div class="w-full h-[581px] bg-white flex flex-col justify-around">
                          <div class="w-[433px] h-[99px]  space-y-3.5">
                         <p class="text-xl font-bold text-black">Passenger Name*</p>
-                        <input class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
+                        <input type="text" class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
                         </div>
                          <div class="w-[433px] h-[99px]  space-y-3.5">
                         <p class="text-xl font-bold text-black">Phone Number*</p>
-                        <input class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
+                        <input type="number" class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
                         </div>
                          <div class="w-[433px] h-[99px]  space-y-3.5">
                         <p class="text-xl font-bold text-black">Email ID</p>
-                        <input class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
+                        <input type="email" class="w-full h-[55%] border-2 border-gray-200 rounded-[15px]"> 
                         </div>
                          <div class="w-[433px] h-[99px] ">
                             <button class="h-[70%] w-full bg-[#1DD100] rounded-xl text-white text-2xl font-bold "> Next</button>
@@ -235,6 +235,10 @@
 
 
 
-
+ <script src="utility.js"></script>
+ <script src="script.js"></script>
+ <script>
+    
+ </script>
 </body>
 </html>
