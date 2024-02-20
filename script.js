@@ -67,3 +67,15 @@ function e4(){
 seatCount = totalSeatboocked.length ;
 totalPrice = 550 * seatCount ;
 
+let couponCode = "";
+
+
+const number = document.getElementById('number');
+document.getElementById('number').addEventListener('keyup' , function(){
+  const numberCount = number.value
+})
+
+document.getElementById('submit-button').addEventListener('click' , function(){
+  document.getElementById('first-page').classList.add('hidden');
+  document.getElementById('second-page').classList.remove('hidden');
+})
