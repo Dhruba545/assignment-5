@@ -10,7 +10,7 @@ function a1(){
    totalSeatboocked.push("a1");
    seatCount = totalSeatboocked.length ;
     totalPrice = 550 * seatCount ;
-
+   
   const updatePrice = document.getElementById('totalPrice').innerText = totalPrice;
   const  seat = document.getElementById('totalSeat').innerText = seatCount ;  
 }
