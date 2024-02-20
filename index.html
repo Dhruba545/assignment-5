@@ -164,14 +164,14 @@
                         <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>B</p><button onclick =b1() id="b1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B1</button><button onclick =b2() id="b2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B2</button></div>
                         <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>C</p><button onclick =c1() id="c1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C1</button><button onclick =c2() id="c2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C2</button></div>
                         <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>D</p><button onclick =d1() id="d1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D1</button><button onclick =d2() id="d2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D2</button></div>
-                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>E</p><button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E1</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E2</button></div>
+                        <div class="flex items-center w-1/2 mx-6 space-x-4  " > <p>E</p><button onclick =e1() id="e1" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E1</button><button onclick =e2() id="e2" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E2</button></div>
                     </div>
                     <div class="flex flex-col space-y-4"><!--Right site seat-->
-                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">   <button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >A3</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >A4</button>  </div>
-                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">   <button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B3</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B4</button>  </div>
-                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">   <button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C3</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C4</button>  </div>
-                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">   <button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D3</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D4</button>  </div>
-                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">   <button class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E3</button><button class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E4</button>  </div>
+                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=a3() id="a3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >A3</button><button onclick =a4() id="a4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >A4</button>  </div>
+                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=b3() id="b3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >B3</button><button onclick =b4() id="b4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >B4</button>  </div>
+                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=c3() id="c3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >C3</button><button onclick =c4() id="c4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >C4</button>  </div>
+                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=d3() id="d3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >D3</button><button onclick =d4() id="d4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >D4</button>  </div>
+                     <div class="flex items-center w-1/2 mx-6 space-x-4  ">             <button onclick=e3() id="e3" class="px-10 py-4 text-center bg-[#F7F8F8] rounded-lg" >E3</button><button onclick =e4() id="e4" class=" px-10 py-4 bg-[#F7F8F8] rounded-lg"  >E4</button>  </div>
                     </div>
                     
                </div>
@@ -198,7 +198,7 @@
                             <button class="w-1/3 h-[90%] rounded-lg bg-[#1DD100] text-white text-xl"> Apply</button>
                          </div>
                          <div class="w-full h-12 mx-3 flex justify-around text-xl font-bold text-black items-center ">
-                            <p>Grand Total</p> <p> </p><div class="flex space-x-5 mr-4" ><p>BDT</p><span>0</span></div>
+                            <p>Grand Total</p> <p> </p><div class="flex space-x-5 mr-4" ><p>BDT</p><span id="grand-total" >0</span></div>
                          </div>
                     </div>
                     <div class="w-full h-[581px] bg-white flex flex-col justify-around">
